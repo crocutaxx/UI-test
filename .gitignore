@@ -1,0 +1,10 @@
+.pytest_cache
+.idea
+venv
+*.iml
+.env
+report
+.allure-results
+.allure-report
+pyvenv.cfg
+Scripts
