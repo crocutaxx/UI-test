@@ -6,13 +6,13 @@
       "name" : "authorization_test",
       "children" : [ {
         "name" : "Invalid authorization",
-        "uid" : "72a7dcfb1619901b",
+        "uid" : "87af2c0a7bd0a297",
         "parentUid" : "9ef46522bdbdf3654285746057ef5083",
         "status" : "passed",
         "time" : {
-          "start" : 1711600334508,
-          "stop" : 1711600337667,
-          "duration" : 3159
+          "start" : 1711600849368,
+          "stop" : 1711600852629,
+          "duration" : 3261
         },
         "flaky" : false,
         "newFailed" : false,
@@ -23,13 +23,13 @@
       "name" : "connecting_users_to_a_meeting_via_ID_test",
       "children" : [ {
         "name" : "Connecting to the meeting as an unauthorized user",
-        "uid" : "bf5e7b4b9f076b5f",
+        "uid" : "a0e4df912187b42",
         "parentUid" : "4ee35891c90436a7bdd903dc00cdc337",
         "status" : "broken",
         "time" : {
-          "start" : 1711600338079,
-          "stop" : 1711600351868,
-          "duration" : 13789
+          "start" : 1711600853041,
+          "stop" : 1711600866164,
+          "duration" : 13123
         },
         "flaky" : false,
         "newFailed" : false,

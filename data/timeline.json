@@ -1,39 +1,39 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "f2e305b1c6d5",
+    "name" : "8650ef604ad8",
     "children" : [ {
       "name" : "8-MainThread",
       "children" : [ {
-        "name" : "Invalid authorization",
-        "uid" : "72a7dcfb1619901b",
-        "parentUid" : "0dd747c11a9eaf47c081a1f401a6c818",
-        "status" : "passed",
+        "name" : "Connecting to the meeting as an unauthorized user",
+        "uid" : "a0e4df912187b42",
+        "parentUid" : "89f2ed3543194403f01b743d22292959",
+        "status" : "broken",
         "time" : {
-          "start" : 1711600334508,
-          "stop" : 1711600337667,
-          "duration" : 3159
+          "start" : 1711600853041,
+          "stop" : 1711600866164,
+          "duration" : 13123
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Connecting to the meeting as an unauthorized user",
-        "uid" : "bf5e7b4b9f076b5f",
-        "parentUid" : "0dd747c11a9eaf47c081a1f401a6c818",
-        "status" : "broken",
+        "name" : "Invalid authorization",
+        "uid" : "87af2c0a7bd0a297",
+        "parentUid" : "89f2ed3543194403f01b743d22292959",
+        "status" : "passed",
         "time" : {
-          "start" : 1711600338079,
-          "stop" : 1711600351868,
-          "duration" : 13789
+          "start" : 1711600849368,
+          "stop" : 1711600852629,
+          "duration" : 3261
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "0dd747c11a9eaf47c081a1f401a6c818"
+      "uid" : "89f2ed3543194403f01b743d22292959"
     } ],
-    "uid" : "5011561109214e51a3dd1cfaa6e9b63b"
+    "uid" : "9d539807319bcc09db4082b69b04c05a"
   } ],
   "name" : "timeline"
 }
