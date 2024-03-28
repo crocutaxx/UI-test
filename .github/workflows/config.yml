@@ -30,19 +30,11 @@ jobs:
         run: |
           TEST_OUTPUT=$(docker-compose up --exit-code-from regression || true)
           echo "$TEST_OUTPUT"  
-          
-          FAILED_TESTS=$(echo "$TEST_OUTPUT" | grep -oP "(\d+) failed" | grep -oP "\d+")
-          echo "FAILED_TESTS=$FAILED_TESTS" >> $GITHUB_ENV
-          
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl
 
-      - name: Copy history from gh-pages to allure-results
-        run: |
-          sudo mkdir -p allure-results/history  
-          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+#      - name: Copy history from gh-pages to allure-results
+#        run: |
+#          sudo mkdir -p allure-results/history
+#          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
 
       - name: Generate Allure report
         run: |
@@ -59,15 +51,3 @@ jobs:
           branch: gh-pages
           folder: allure-report
           clean: true
-
-      - name: Notify on failed tests
-        if: ${{ env.FAILED_TESTS > 15 && github.event_name == 'schedule' }}
-        run: |
-          TELEGRAM_BOT_TOKEN="${{ secrets.TELEGRAM_BOT_TOKEN }}"
-          CHAT_ID="${{ secrets.TG_CHAT_ID }}"
-            
-          MESSAGE="❌ UI Tests Failed: ${{ env.FAILED_TESTS }} tests failed. Check details [here](https://crocutaxx.github.io/Autotest-UI/)"
-          curl -s -X POST "https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage" -d "chat_id=$CHAT_ID" -d "text=$MESSAGE" -d "parse_mode=Markdown"
-        env:
-            TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-            CHAT_ID: ${{ secrets.TG_CHAT_ID }}
