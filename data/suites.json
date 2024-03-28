@@ -1,0 +1,51 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "authorization_test",
+      "children" : [ {
+        "name" : "TestAuthorization",
+        "children" : [ {
+          "name" : "Invalid authorization",
+          "uid" : "24cefca7c611bde",
+          "parentUid" : "de745b5f0c3ce48a1375366161d0f819",
+          "status" : "passed",
+          "time" : {
+            "start" : 1711600140089,
+            "stop" : 1711600143821,
+            "duration" : 3732
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "de745b5f0c3ce48a1375366161d0f819"
+      } ],
+      "uid" : "53aa84800722ac6ddd2907e422a776b3"
+    }, {
+      "name" : "connecting_users_to_a_meeting_via_ID_test",
+      "children" : [ {
+        "name" : "TestConnectingUsersToMeeting",
+        "children" : [ {
+          "name" : "Connecting to the meeting as an unauthorized user",
+          "uid" : "13f354cd5e411f4a",
+          "parentUid" : "4ca24dbbee761696df1d7ef1db6ece01",
+          "status" : "broken",
+          "time" : {
+            "start" : 1711600144232,
+            "stop" : 1711600158884,
+            "duration" : 14652
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4ca24dbbee761696df1d7ef1db6ece01"
+      } ],
+      "uid" : "fc53cd1660a32d8db3dcb574828b44ce"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ],
+  "name" : "suites"
+}

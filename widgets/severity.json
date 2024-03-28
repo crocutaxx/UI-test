@@ -1,0 +1,21 @@
+[ {
+  "uid" : "24cefca7c611bde",
+  "name" : "Invalid authorization",
+  "time" : {
+    "start" : 1711600140089,
+    "stop" : 1711600143821,
+    "duration" : 3732
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "13f354cd5e411f4a",
+  "name" : "Connecting to the meeting as an unauthorized user",
+  "time" : {
+    "start" : 1711600144232,
+    "stop" : 1711600158884,
+    "duration" : 14652
+  },
+  "status" : "broken",
+  "severity" : "critical"
+} ]

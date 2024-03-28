@@ -1,0 +1,43 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "authorization_test",
+      "children" : [ {
+        "name" : "Invalid authorization",
+        "uid" : "24cefca7c611bde",
+        "parentUid" : "9ef46522bdbdf3654285746057ef5083",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711600140089,
+          "stop" : 1711600143821,
+          "duration" : 3732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ef46522bdbdf3654285746057ef5083"
+    }, {
+      "name" : "connecting_users_to_a_meeting_via_ID_test",
+      "children" : [ {
+        "name" : "Connecting to the meeting as an unauthorized user",
+        "uid" : "13f354cd5e411f4a",
+        "parentUid" : "4ee35891c90436a7bdd903dc00cdc337",
+        "status" : "broken",
+        "time" : {
+          "start" : 1711600144232,
+          "stop" : 1711600158884,
+          "duration" : 14652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4ee35891c90436a7bdd903dc00cdc337"
+    } ],
+    "uid" : "bf49149a3821e34f7608bb6885d52868"
+  } ],
+  "name" : "packages"
+}
