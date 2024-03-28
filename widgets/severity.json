@@ -1,20 +1,20 @@
 [ {
-  "uid" : "24cefca7c611bde",
+  "uid" : "72a7dcfb1619901b",
   "name" : "Invalid authorization",
   "time" : {
-    "start" : 1711600140089,
-    "stop" : 1711600143821,
-    "duration" : 3732
+    "start" : 1711600334508,
+    "stop" : 1711600337667,
+    "duration" : 3159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "13f354cd5e411f4a",
+  "uid" : "bf5e7b4b9f076b5f",
   "name" : "Connecting to the meeting as an unauthorized user",
   "time" : {
-    "start" : 1711600144232,
-    "stop" : 1711600158884,
-    "duration" : 14652
+    "start" : 1711600338079,
+    "stop" : 1711600351868,
+    "duration" : 13789
   },
   "status" : "broken",
   "severity" : "critical"

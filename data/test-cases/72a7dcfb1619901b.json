@@ -1,22 +1,22 @@
 {
-  "uid" : "24cefca7c611bde",
+  "uid" : "72a7dcfb1619901b",
   "name" : "Invalid authorization",
   "fullName" : "tests.authorization_test.TestAuthorization#test_invalid_authorization",
   "historyId" : "c2e60886227b93e61e5ded5936584a37",
   "time" : {
-    "start" : 1711600140089,
-    "stop" : 1711600143821,
-    "duration" : 3732
+    "start" : 1711600334508,
+    "stop" : 1711600337667,
+    "duration" : 3159
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "user",
+    "name" : "driver_1",
     "time" : {
-      "start" : 1711600140088,
-      "stop" : 1711600140088,
-      "duration" : 0
+      "start" : 1711600334125,
+      "stop" : 1711600334508,
+      "duration" : 383
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "stepsCount" : 0,
     "hasContent" : false
   }, {
-    "name" : "driver_1",
+    "name" : "user",
     "time" : {
-      "start" : 1711600139715,
-      "stop" : 1711600140088,
-      "duration" : 373
+      "start" : 1711600334508,
+      "stop" : 1711600334508,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -47,9 +47,9 @@
     "steps" : [ {
       "name" : "Open https://vcs.qosyl.kz/login page",
       "time" : {
-        "start" : 1711600140089,
-        "stop" : 1711600142441,
-        "duration" : 2352
+        "start" : 1711600334508,
+        "stop" : 1711600336279,
+        "duration" : 1771
       },
       "status" : "passed",
       "steps" : [ ],
@@ -62,9 +62,9 @@
     }, {
       "name" : "Enter login",
       "time" : {
-        "start" : 1711600142441,
-        "stop" : 1711600142551,
-        "duration" : 110
+        "start" : 1711600336279,
+        "stop" : 1711600336385,
+        "duration" : 106
       },
       "status" : "passed",
       "steps" : [ ],
@@ -77,9 +77,9 @@
     }, {
       "name" : "Enter password",
       "time" : {
-        "start" : 1711600142551,
-        "stop" : 1711600142619,
-        "duration" : 68
+        "start" : 1711600336385,
+        "stop" : 1711600336458,
+        "duration" : 73
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,9 +92,9 @@
     }, {
       "name" : "Confirm login and pass - Click submit button",
       "time" : {
-        "start" : 1711600142619,
-        "stop" : 1711600142680,
-        "duration" : 61
+        "start" : 1711600336458,
+        "stop" : 1711600336524,
+        "duration" : 66
       },
       "status" : "passed",
       "steps" : [ ],
@@ -107,9 +107,9 @@
     }, {
       "name" : "Check push incorrect data",
       "time" : {
-        "start" : 1711600142680,
-        "stop" : 1711600143719,
-        "duration" : 1039
+        "start" : 1711600336524,
+        "stop" : 1711600337559,
+        "duration" : 1035
       },
       "status" : "passed",
       "steps" : [ ],
@@ -122,8 +122,8 @@
     }, {
       "name" : "Page https://vcs.qosyl.kz/login is opened",
       "time" : {
-        "start" : 1711600143719,
-        "stop" : 1711600143722,
+        "start" : 1711600337559,
+        "stop" : 1711600337562,
         "duration" : 3
       },
       "status" : "passed",
@@ -136,11 +136,11 @@
       "hasContent" : false
     } ],
     "attachments" : [ {
-      "uid" : "e59f0440fcd04cc3",
+      "uid" : "8f4797fce3822edf",
       "name" : "The user is not logged in",
-      "source" : "e59f0440fcd04cc3.png",
+      "source" : "8f4797fce3822edf.png",
       "type" : "image/png",
-      "size" : 71599
+      "size" : 71589
     } ],
     "parameters" : [ ],
     "attachmentsCount" : 1,
@@ -151,8 +151,8 @@
   "afterStages" : [ {
     "name" : "driver_1::0",
     "time" : {
-      "start" : 1711600143821,
-      "stop" : 1711600143906,
+      "start" : 1711600337668,
+      "stop" : 1711600337753,
       "duration" : 85
     },
     "status" : "passed",
@@ -181,7 +181,7 @@
     "value" : "TestAuthorization"
   }, {
     "name" : "host",
-    "value" : "721dcc2f6758"
+    "value" : "f2e305b1c6d5"
   }, {
     "name" : "thread",
     "value" : "8-MainThread"
@@ -206,8 +206,27 @@
     "severity" : "normal",
     "retries" : [ ],
     "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "24cefca7c611bde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1711600140089,
+          "stop" : 1711600143821,
+          "duration" : 3732
+        }
+      } ]
+    },
     "tags" : [ ]
   },
-  "source" : "24cefca7c611bde.json",
+  "source" : "72a7dcfb1619901b.json",
   "parameterValues" : [ ]
 }

@@ -6,13 +6,13 @@
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
         "name" : "Connecting to the meeting as an unauthorized user",
-        "uid" : "13f354cd5e411f4a",
+        "uid" : "bf5e7b4b9f076b5f",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1711600144232,
-          "stop" : 1711600158884,
-          "duration" : 14652
+          "start" : 1711600338079,
+          "stop" : 1711600351868,
+          "duration" : 13789
         },
         "flaky" : false,
         "newFailed" : false,

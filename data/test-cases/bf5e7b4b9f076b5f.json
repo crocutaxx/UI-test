@@ -1,0 +1,261 @@
+{
+  "uid" : "bf5e7b4b9f076b5f",
+  "name" : "Connecting to the meeting as an unauthorized user",
+  "fullName" : "tests.connecting_users_to_a_meeting_via_ID_test.TestConnectingUsersToMeeting#test_connecting_to_meeting_wtih_id_unauth_user",
+  "historyId" : "e244496a848550712cfac513fce1fe60",
+  "time" : {
+    "start" : 1711600338079,
+    "stop" : 1711600351868,
+    "duration" : 13789
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <connecting_users_to_a_meeting_via_ID_test.TestConnectingUsersToMeeting object at 0x7f31d7d63da0>\n\n    @pytest.mark.smoke\n    @allure.title(\"Connecting to the meeting as an unauthorized user\")\n    @allure.severity(\"Critical\")\n    def test_connecting_to_meeting_wtih_id_unauth_user(self):\n    \n        self.login_page.open()\n        self.login_page.click_enter_meet_button()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identifier(\"123456789\")\n        self.connect_to_meeting_page.enter_user_name(\"Cat\")\n        self.connect_to_meeting_page.click_enter_button()\n>       self.meet_page.click_on_enter_without_checking_button()\n\ntests/connecting_users_to_a_meeting_via_ID_test.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/meet_page.py:18: in click_on_enter_without_checking_button\n    self.wait.until(EC.element_to_be_clickable(self.ENTER_WITHOUT_CHECKING)).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"5e37b9a1cedd9d8511aedc00a8d6d37c\")>\nmethod = <function element_to_be_clickable.<locals>._predicate at 0x7f31d7061080>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver_1",
+    "time" : {
+      "start" : 1711600337754,
+      "stop" : 1711600338078,
+      "duration" : 324
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "user",
+    "time" : {
+      "start" : 1711600338078,
+      "stop" : 1711600338078,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <connecting_users_to_a_meeting_via_ID_test.TestConnectingUsersToMeeting object at 0x7f31d7d63da0>\n\n    @pytest.mark.smoke\n    @allure.title(\"Connecting to the meeting as an unauthorized user\")\n    @allure.severity(\"Critical\")\n    def test_connecting_to_meeting_wtih_id_unauth_user(self):\n    \n        self.login_page.open()\n        self.login_page.click_enter_meet_button()\n        self.connect_to_meeting_page.is_opened()\n        self.connect_to_meeting_page.enter_meet_identifier(\"123456789\")\n        self.connect_to_meeting_page.enter_user_name(\"Cat\")\n        self.connect_to_meeting_page.click_enter_button()\n>       self.meet_page.click_on_enter_without_checking_button()\n\ntests/connecting_users_to_a_meeting_via_ID_test.py:20: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/meet_page.py:18: in click_on_enter_without_checking_button\n    self.wait.until(EC.element_to_be_clickable(self.ENTER_WITHOUT_CHECKING)).click()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"5e37b9a1cedd9d8511aedc00a8d6d37c\")>\nmethod = <function element_to_be_clickable.<locals>._predicate at 0x7f31d7061080>\nmessage = ''\n\n    def until(self, method: Callable[[D], Union[Literal[False], T]], message: str = \"\") -> T:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value does not evaluate to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        screen = None\n        stacktrace = None\n    \n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if value:\n                    return value\n            except self._ignored_exceptions as exc:\n                screen = getattr(exc, \"screen\", None)\n                stacktrace = getattr(exc, \"stacktrace\", None)\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message, screen, stacktrace)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:105: TimeoutException",
+    "steps" : [ {
+      "name" : "Open https://vcs.qosyl.kz/login page",
+      "time" : {
+        "start" : 1711600338079,
+        "stop" : 1711600339710,
+        "duration" : 1631
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click enter meet button",
+      "time" : {
+        "start" : 1711600339710,
+        "stop" : 1711600341536,
+        "duration" : 1826
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://vcs.qosyl.kz/meeting/ is opened",
+      "time" : {
+        "start" : 1711600341536,
+        "stop" : 1711600341540,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter meet identifier",
+      "time" : {
+        "start" : 1711600341540,
+        "stop" : 1711600341648,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "room_id",
+        "value" : "'123456789'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Enter user name",
+      "time" : {
+        "start" : 1711600341649,
+        "stop" : 1711600341721,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "user_name",
+        "value" : "'Cat'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click enter button",
+      "time" : {
+        "start" : 1711600341721,
+        "stop" : 1711600341799,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter without cheking",
+      "time" : {
+        "start" : 1711600341799,
+        "stop" : 1711600351867,
+        "duration" : 10068
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/meet_page.py\", line 18, in click_on_enter_without_checking_button\n    self.wait.until(EC.element_to_be_clickable(self.ENTER_WITHOUT_CHECKING)).click()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 105, in until\n    raise TimeoutException(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "driver_1::0",
+    "time" : {
+      "start" : 1711600351897,
+      "stop" : 1711600351953,
+      "duration" : 56
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Connect to meeting Functionality"
+  }, {
+    "name" : "severity",
+    "value" : "Critical"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "connecting_users_to_a_meeting_via_ID_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConnectingUsersToMeeting"
+  }, {
+    "name" : "host",
+    "value" : "f2e305b1c6d5"
+  }, {
+    "name" : "thread",
+    "value" : "8-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.connecting_users_to_a_meeting_via_ID_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "13f354cd5e411f4a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
+        "time" : {
+          "start" : 1711600144232,
+          "stop" : 1711600158884,
+          "duration" : 14652
+        }
+      } ]
+    },
+    "tags" : [ "smoke" ]
+  },
+  "source" : "bf5e7b4b9f076b5f.json",
+  "parameterValues" : [ ]
+}
